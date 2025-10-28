@@ -12,10 +12,10 @@
 - Test templates ready
 - README files in all directories
 
-✅ **Foundational education completed**
-- Yale University "Rocket Science for Everyone" course (Coursera) - Completed October 2025
-- Theory notes documented in `/theory/`
-- Ready to begin advanced modules
+✅ **Initial learning begun**
+- Completed one introductory course: Yale "Rocket Science for Everyone" (Coursera)
+- Basic notes documented - surface-level understanding only
+- This is the beginning, not the end of foundational learning
 
 ---
 
@@ -64,11 +64,11 @@ propulsion-notebook/
 - **Status:** ✅ Completed October 2025
 
 ### Theory Documentation
-- ✅ `quick_reference.md` - Essential equations and values
-- ✅ `orbital_mechanics.md` - Complete orbital mechanics notes
-- ✅ `rocket_fundamentals.md` - Rocket propulsion fundamentals
-- ✅ `satellite_systems.md` - Satellite design and subsystems
-- **Status:** ✅ All foundational notes documented
+- ✅ `quick_reference.md` - Basic equations from intro course
+- ✅ `orbital_mechanics.md` - Introductory orbital mechanics notes
+- ✅ `rocket_fundamentals.md` - Basic rocket equation and concepts
+- ✅ `satellite_systems.md` - Overview of satellite systems
+- **Status:** Initial notes from first course - much deeper study needed
 
 ---
 
@@ -211,8 +211,9 @@ propulsion-notebook/
 - ⏳ Risk log updated when incidents occur
 
 ### Learning Progress
-- ✅ Understand fundamental rocket science concepts (orbital mechanics, propulsion, satellites)
-- ✅ Can explain Kepler's laws, rocket equation, and staging principles
+- ✅ Have surface-level familiarity with rocket science concepts
+- ✅ Can describe basic principles (Kepler's laws, rocket equation) at introductory level
+- ⏳ Deep understanding of theory (requires much more study)
 - ⏳ Can generate and validate simulation results
 - ⏳ Can safely build and test hardware
 - ⏳ Can analyze test data and iterate designs
@@ -232,7 +233,7 @@ propulsion-notebook/
 
 | Date       | Change Description |
 |------------|--------------------|
-| 2025-10-28 | Completed Yale "Rocket Science for Everyone" course; documented foundational theory notes (orbital mechanics, rocket fundamentals, satellite systems, quick reference) |
+| 2025-10-28 | Completed introductory course (Yale "Rocket Science for Everyone"); documented basic notes; at the very beginning of learning journey |
 | 2025-10-26 | Project initialized, directory structure and safety framework created |
 
 ---

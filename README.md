@@ -41,14 +41,25 @@ See [`PROJECT_STATUS.md`](PROJECT_STATUS.md) for detailed progress tracking.
 
 ```
 propulsion-notebook/
+├── lib/                     # Core C++ library
+│   ├── include/
+│   │   ├── propulsion/      # Core physics (orbital mechanics, rocket equation)
+│   │   ├── simulation/      # Simulation components
+│   │   └── mission/         # Mission analysis tools
+│   ├── src/
+│   └── tests/
+│
+├── sims/                    # Simulation applications (use lib/)
+│   └── (Planned: rocket_perf, ascent_6dof, uav_endurance, etc.)
+│
+├── scripts/                 # Python analysis and plotting scripts
+│   └── (Planned: plot_trajectory.py, analyze_performance.py, etc.)
+│
 ├── theory/                    # Learning notes, derivations, theory documents
 │   ├── quick_reference.md     # Equations, values, and quick facts
 │   ├── orbital_mechanics.md   # Orbits and Kepler's laws
 │   ├── rocket_fundamentals.md # Rocket equation and staging
 │   └── satellite_systems.md   # Satellite design and subsystems
-│
-├── sims/                      # Simulation code and analysis
-│   └── (Planned: rocket_perf, ascent_6dof, uav_endurance, etc.)
 │
 ├── uav/                       # UAV hardware development
 │   └── (Planned: airframe, avionics, propulsion bench tests)
@@ -59,6 +70,7 @@ propulsion-notebook/
 │   ├── TEST_PLAN_TEMPLATE.md # Pre-test planning template
 │   └── TEST_REPORT_TEMPLATE.md # Post-test documentation
 │
+├── CMakeLists.txt             # Root CMake configuration
 ├── PROJECT_STATUS.md          # Detailed progress tracking
 ├── ROADMAP.md                 # Long-term learning roadmap
 └── README.md                  # This file
@@ -125,15 +137,16 @@ This repository involves research into propulsion systems and energetic material
 - [Rocket Science for Everyone](https://www.coursera.org/learn/rocket-science-for-everyone/) - Yale University (Coursera)
 
 ### Reference Textbooks
-- Curtis, H. D. - *Orbital Mechanics for Engineering Students*
 - Sutton & Biblarz - *Rocket Propulsion Elements*
-- Wertz & Larson - *Space Mission Analysis and Design*
-- Turner, M. J. L. - *Rocket and Spacecraft Propulsion*
 
-### Simulation Tools
-- Python (NumPy, SciPy, Matplotlib) for performance modeling
-- STK / GMAT for trajectory analysis
-- OpenFOAM / SU2 for CFD (planned)
+### Development Tools
+- **C++17/20** - Core simulation library and performance-critical code
+- **CMake** - Build system and project management
+- **Python** - Data analysis, visualization, and result plotting (NumPy, Matplotlib)
+- **Jupyter** - Documenting results and learning process
+- **Unit Testing** - Catch2 or Google Test (planned)
+- **STK / GMAT** - Trajectory analysis (future integration)
+- **OpenFOAM / SU2** - CFD (long-term goal)
 
 ---
 
@@ -151,20 +164,8 @@ This repository is shared for educational purposes. Code and documentation are a
 
 ---
 
-## 🤝 Contributing
-
-This is a personal learning repository, but if you spot errors in theory notes or have suggestions for safety improvements, feel free to open an issue.
-
----
-
-## 📬 Contact
-
-For questions or collaboration inquiries related to UAV research and aerospace education.
-
----
-
 **Last Updated**: October 28, 2025  
-**Status**: Foundations complete, ready to begin simulation or hardware work
+**Status**: Working on foundations
 
 ---
 
